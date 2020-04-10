@@ -29,6 +29,7 @@ import './Cast';
 import './ClipByValue';
 import './Concat';
 import './Conv2D';
+import './Conv2dDerInput';
 import './Cos';
 import './CropAndResize';
 import './DepthwiseConv2dNative';
