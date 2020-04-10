@@ -169,6 +169,7 @@ tfjs_cc_library(
         ":BatchMatMul",
         ":ClipByValue",
         ":Conv2D",
+        ":Conv2dDerInput",
         ":CropAndResize",
         ":DepthwiseConv2dNative",
         ":Div",
@@ -335,6 +336,12 @@ tfjs_unit_test(
     deps = [
         ":Conv2D",
     ],
+)
+
+tfjs_cc_library(
+    name = "Conv2dDerInput",
+    srcs = ["kernels/Conv2dDerInput.cc"],
+    deps = [],
 )
 
 tfjs_cc_library(
